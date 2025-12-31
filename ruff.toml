@@ -1,6 +1,12 @@
 fix = true
 unsafe-fixes = true
-include = ["pyproject.toml", "src/**/*.py", "bin/**/*.py", "examples/**/*.py"]
+include = [
+  "pyproject.toml",
+  "src/**/*.py",
+  "bin/**/*.py",
+  "examples/**/*.py",
+  "datawhale/**/*.py"
+]
 line-length = 120
 
 [lint]
