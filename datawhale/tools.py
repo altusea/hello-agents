@@ -1,14 +1,12 @@
+import os
 from collections.abc import Callable
+from typing import Any
 
 from dotenv import load_dotenv
+from serpapi import SerpApiClient
 
 # 加载 .env 文件中的环境变量
 load_dotenv()
-
-import os
-from typing import Any
-
-from serpapi import SerpApiClient
 
 
 def search(query: str) -> str:
