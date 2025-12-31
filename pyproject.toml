@@ -6,6 +6,10 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
   "google-search-results>=2.4.2",
+  "langchain>=1.2.0",
+  "langchain-community>=0.4.1",
+  "langchain-openai>=1.1.6",
+  "langgraph>=1.0.5",
   "litellm>=1.80.11",
   "python-dotenv>=1.2.1",
   "smolagents[toolkit]>=1.23.0",

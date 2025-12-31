@@ -4,8 +4,9 @@ include = [
   "pyproject.toml",
   "src/**/*.py",
   "bin/**/*.py",
+  "datawhale/**/*.py",
   "examples/**/*.py",
-  "datawhale/**/*.py"
+  "patterns/**/*.py"
 ]
 line-length = 120
 
