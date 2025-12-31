@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+  "google-search-results>=2.4.2",
   "litellm>=1.80.11",
   "python-dotenv>=1.2.1",
   "smolagents[toolkit]>=1.23.0",
