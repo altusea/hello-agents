@@ -1,6 +1,6 @@
 fix = true
 unsafe-fixes = true
-include = ["pyproject.toml", "src/**/*.py", "bin/**/*.py", "snippets/**/*.py"]
+include = ["pyproject.toml", "src/**/*.py", "bin/**/*.py", "examples/**/*.py"]
 line-length = 120
 
 [lint]
