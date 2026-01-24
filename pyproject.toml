@@ -5,24 +5,25 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-  "google-adk>=1.21.0",
+  "agentscope>=1.0.9",
+  "google-adk>=1.23.0",
   "google-search-results>=2.4.2",
-  "langchain>=1.2.0",
+  "langchain>=1.2.7",
   "langchain-community>=0.4.1",
-  "langchain-openai>=1.1.6",
-  "langgraph>=1.0.5",
-  "litellm>=1.80.11",
+  "langchain-openai>=1.1.7",
+  "langgraph>=1.0.7",
+  "litellm>=1.81.1",
   "nest-asyncio>=1.6.0",
   "pydantic>=2.12.5",
   "python-dotenv>=1.2.1",
-  "smolagents[toolkit]>=1.23.0",
+  "smolagents[toolkit]>=1.24.0",
 ]
 
 [dependency-groups]
 dev = [
   "pytest>=9.0.2",
-  "ruff>=0.14.10",
-  "ty>=0.0.8",
+  "ruff>=0.14.14",
+  "ty>=0.0.13",
 ]
 
 [build-system]
