@@ -1,84 +1,183 @@
-# Agents
+# AGENTS.md
 
-This directory contains various AI agent implementations and examples.
+This file provides guidelines for AI agents working in this repository.
 
-## Overview
+## Project Overview
 
-This project demonstrates different agent patterns and architectures for AI systems, including reasoning strategies and tool usage patterns.
+This is an AI agent patterns repository demonstrating various agent architectures including Plan-and-Solve, ReAct, and Reflection patterns. The project uses Python 3.14+ with litellm for LLM integration.
 
-## Components
+## Build, Lint, and Test Commands
 
-### DataWhale Agents
+### Installation
+```bash
+pip install -e .
+```
 
-Located in the `datawhale/` directory, containing core agent implementations:
+### Development Dependencies
+```bash
+pip install -e ".[dev]"
+```
 
-- **Plan_and_solve.py**: Implements the Plan-and-Solve reasoning pattern
-- **ReAct.py**: Implements the ReAct (Reasoning and Acting) pattern
-- **Reflection.py**: Implements self-reflection capabilities
-- **llm_client.py**: LLM client utilities for agent communication
-- **tools.py**: Tool definitions and utilities for agent operations
+### Linting
+```bash
+ruff check .                    # Run linter on all files
+ruff check --fix .              # Auto-fix linting issues
+ruff check <file>               # Lint specific file
+```
 
-### Examples
+### Formatting
+```bash
+ruff format .                   # Format all files
+ruff format <file>              # Format specific file
+```
 
-Located in the `examples/` directory, containing demonstration scripts:
+### Testing
+```bash
+pytest                          # Run all tests
+pytest <file>                   # Run specific test file
+pytest -v                       # Run with verbose output
+pytest -k "test_name"           # Run tests matching pattern
+pytest --collect-only           # List all tests without running
+```
 
-- **litellm_test.py**: Example usage of LiteLLM integration
-- **smolagent_demo.py**: Small-scale agent demonstration
-
-### Utilities
-
-Located in the `src/ulib/utils/` directory:
-
-- **env_reader.py**: Environment variable reading utilities
-- **__init__.py**: Package initialization
-
-## Getting Started
-
-1. Install dependencies: `pip install -e .`
-2. Explore the agent implementations in the `datawhale/` directory
-3. Run examples in the `examples/` directory
-4. Check out the utility functions in `src/ulib/utils/`
-
-## Agent Patterns
-
-This project implements several key agent reasoning patterns:
-
-- **Plan-and-Solve**: Two-stage reasoning with planning followed by execution
-- **ReAct**: Alternating between reasoning and acting
-- **Reflection**: Self-evaluation and improvement capabilities
-
-Each pattern demonstrates different approaches to AI agent reasoning and decision-making.
+### Building
+```bash
+pip install build
+python -m build                 # Build wheel and tarball
+```
 
 ## Code Style Guidelines
 
-This project follows specific coding standards to maintain consistency and readability across all agent implementations.
-
-### Code Formatting Rules
-
-- **Line Length**: Maximum 120 characters per line
-- **Quote Style**: Use double quotes (`"`) for all strings
-- **Indentation**: Use consistent indentation (follow PEP 8 standards)
-- **File Extensions**: Python files should use `.py` extension
-
-### Linting Standards
-
-### Code Quality Tools
-
-- **Auto-formatting**: Ruff is configured with `fix = true` to automatically resolve issues
-- **Unsafe fixes**: Enabled with `unsafe-fixes = true` for aggressive auto-correction
-- **File coverage**: Applies to `pyproject.toml`, `src/**/*.py`, `bin/**/*.py`, `examples/**/*.py`, and `datawhale/**/*.py`
-
-### Development Workflow
-
-1. Run linting: `ruff check .`
-2. Auto-fix issues: `ruff check --fix .`
-3. Format code: `ruff format .`
-4. Verify changes: `ruff check .` (after formatting)
-
-### Best Practices
-
-- Write self-documenting code with descriptive variable and function names
-- Include type hints where appropriate
+### General Principles
+- Write self-documenting code with descriptive names
 - Keep functions focused and modular
 - Use docstrings for complex functions and classes
-- Follow the existing patterns in agent implementations
+- Follow existing patterns in agent implementations
+
+### Imports
+Organize imports in three sections separated by blank lines:
+1. Standard library imports
+2. Third-party imports
+3. Local application imports
+
+```python
+import os
+import re
+from collections.abc import Callable
+from typing import Any
+
+from dotenv import load_dotenv
+from openai import OpenAI
+
+from ulib.utils.env_reader import read_deepseek_api_key
+```
+
+### Formatting
+- **Line length**: Maximum 120 characters
+- **Quotes**: Use double quotes (`"`) for all strings
+- **Indentation**: 4 spaces (PEP 8)
+- **Line breaks**: Use trailing commas for multi-line structures
+
+### Type Hints
+Use modern Python 3.14+ union syntax:
+```python
+def __init__(
+    self,
+    model: str | None = None,
+    apiKey: str | None = None,
+):
+    ...
+```
+
+Avoid `Optional[]` - use `| None` instead.
+
+### Naming Conventions
+- **Classes**: PascalCase (e.g., `HelloAgentsLLM`, `ReActAgent`)
+- **Functions/methods**: snake_case (e.g., `get_tool`, `think`)
+- **Variables**: snake_case (e.g., `response_text`, `llm_client`)
+- **Constants**: SCREAMING_SNAKE_CASE (e.g., `PLANNER_PROMPT_TEMPLATE`)
+- **Private methods**: Leading underscore (e.g., `_parse_output`)
+
+### Error Handling
+- Use specific exception types when possible
+- Return `None` or error messages for recoverable errors
+- Print user-friendly error messages with emojis
+- Handle `None` returns from functions with `or` defaults
+
+```python
+try:
+    response = self.client.chat.completions.create(...)
+except Exception as e:
+    print(f"❌ 调用LLM API时发生错误: {e}")
+    return None
+
+if not all([self.model, apiKey, baseUrl]):
+    raise ValueError("模型ID、API密钥和服务地址必须被提供或在.env文件中定义。")
+```
+
+### Class Structure
+Follow this pattern for classes:
+```python
+class ClassName:
+    """Docstring describing the class."""
+
+    def __init__(self, param: str | None = None):
+        """Initialize the class."""
+        self.param = param
+
+    def public_method(self) -> ReturnType:
+        """Public method description."""
+        ...
+
+    def _private_method(self) -> ReturnType:
+        """Private method description."""
+        ...
+```
+
+### File Structure
+- Put `if __name__ == "__main__":` at the bottom of files
+- Include usage examples in main blocks
+- Load environment variables at module level with error handling
+
+### Comments
+- Avoid comments that state the obvious
+- Use Chinese comments when documenting Chinese-specific behavior
+- Prefer descriptive naming over comments for simple logic
+
+### Agent Implementation Patterns
+
+#### ReAct Pattern
+```python
+class ReActAgent:
+    def __init__(self, llm_client, tool_executor, max_steps: int = 5):
+        self.llm_client = llm_client
+        self.tool_executor = tool_executor
+        self.max_steps = max_steps
+
+    def run(self, question: str):
+        while current_step < self.max_steps:
+            thought, action = self._parse_output(response)
+            ...
+```
+
+#### Plan-and-Solve Pattern
+```python
+class PlanAndSolveAgent:
+    def __init__(self, llm_client):
+        self.llm_client = llm_client
+        self.planner = Planner(self.llm_client)
+        self.executor = Executor(self.llm_client)
+
+    def run(self, question: str):
+        plan = self.planner.plan(question)
+        final_answer = self.executor.execute(question, plan)
+        ...
+```
+
+## File Coverage
+Ruff applies to: `pyproject.toml`, `src/**/*.py`, `datawhale/**/*.py`, `examples/**/*.py`, `patterns/**/*.py`
+
+## Ruff Configuration
+- `fix = true`: Auto-resolve issues
+- `unsafe-fixes = true`: Allow aggressive auto-correction
+- Selects: E4, E7, E9, F, B, A, I, UP rules
