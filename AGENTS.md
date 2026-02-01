@@ -4,7 +4,14 @@ This file provides guidelines for AI agents working in this repository.
 
 ## Project Overview
 
-This is an AI agent patterns repository demonstrating various agent architectures including Plan-and-Solve, ReAct, and Reflection patterns. The project uses Python 3.14+ with litellm for LLM integration.
+This is an AI agent patterns repository demonstrating various agent architectures including Plan-and-Solve, ReAct, and Reflection patterns. The project uses Python 3.14+ with litellm for LLM integration and includes implementations from the "Hello Agents" book.
+
+**Key Directories:**
+- `datawhale/` - Main agent implementations (ReAct, Plan-and-Solve, Reflection)
+- `examples/` - Demo scripts for various agent frameworks
+- `patterns/` - Pattern implementations
+- `src/ulib/` - Utility library
+- `bin/` - Command-line tools
 
 ## Build, Lint, and Test Commands
 
@@ -40,11 +47,26 @@ pytest -k "test_name"           # Run tests matching pattern
 pytest --collect-only           # List all tests without running
 ```
 
+**Note:** This project currently doesn't have a test suite. When adding tests, follow these patterns:
+- Create `tests/` directory at project root
+- Test files should be named `test_*.py` or `*_test.py`
+- Use pytest fixtures and assertions
+
 ### Building
 ```bash
 pip install build
 python -m build                 # Build wheel and tarball
 ```
+
+**VERY IMPORTANT:** When you have completed a task, you MUST run the lint and typecheck commands (e.g., `ruff check .`, `ruff format .`) to ensure your code is correct. If you are unable to find the correct command, ask the user for the command to run and if they supply it, proactively suggest writing it to AGENTS.md so that you will know to run it next time.
+
+## Code Style Guidelines
+
+### General Principles
+- Write self-documenting code with descriptive names
+- Keep functions focused and modular
+- Use docstrings for complex functions and classes
+- Follow existing patterns in agent implementations
 
 ## Code Style Guidelines
 
@@ -145,39 +167,14 @@ class ClassName:
 - Prefer descriptive naming over comments for simple logic
 
 ### Agent Implementation Patterns
-
-#### ReAct Pattern
-```python
-class ReActAgent:
-    def __init__(self, llm_client, tool_executor, max_steps: int = 5):
-        self.llm_client = llm_client
-        self.tool_executor = tool_executor
-        self.max_steps = max_steps
-
-    def run(self, question: str):
-        while current_step < self.max_steps:
-            thought, action = self._parse_output(response)
-            ...
-```
-
-#### Plan-and-Solve Pattern
-```python
-class PlanAndSolveAgent:
-    def __init__(self, llm_client):
-        self.llm_client = llm_client
-        self.planner = Planner(self.llm_client)
-        self.executor = Executor(self.llm_client)
-
-    def run(self, question: str):
-        plan = self.planner.plan(question)
-        final_answer = self.executor.execute(question, plan)
-        ...
-```
-
-## File Coverage
-Ruff applies to: `pyproject.toml`, `src/**/*.py`, `datawhale/**/*.py`, `examples/**/*.py`, `patterns/**/*.py`
+See actual implementations in `datawhale/` directory:
+- `ReAct.py`: ReAct pattern with tool execution loop
+- `Plan_and_solve.py`: Plan-and-Solve pattern with planner/executor
+- `Reflection.py`: Reflection pattern with self-critique
 
 ## Ruff Configuration
 - `fix = true`: Auto-resolve issues
 - `unsafe-fixes = true`: Allow aggressive auto-correction
 - Selects: E4, E7, E9, F, B, A, I, UP rules
+- `line-length = 120`: Maximum line length
+- `quote-style = "double"`: Use double quotes for all strings
