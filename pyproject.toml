@@ -1,6 +1,6 @@
 [project]
 name = "hello-agents"
-version = "2026.1.0"
+version = "2026.2.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
