@@ -1,31 +1,30 @@
 [project]
 name = "hello-agents"
-version = "2026.2.0"
-description = "Add your description here"
+version = "2026.3.0"
+description = "Agent concepts playground"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-  "agentscope>=1.0.9",
-  "any-llm-sdk[all]>=1.8.5",
-  "google-adk>=1.25.1",
+  "any-llm-sdk[all]>=1.8.6",
+  "google-adk>=1.26.0",
   "google-search-results>=2.4.2",
   "langchain>=1.2.10",
   "langchain-community>=0.4.1",
   "langchain-openai>=1.1.10",
-  "langgraph>=1.0.9",
-  "litellm>=1.81.15",
+  "langgraph>=1.0.10",
+  "litellm>=1.82.0",
   "nest-asyncio>=1.6.0",
   "pydantic>=2.12.5",
-  "python-dotenv>=1.2.1",
-  "republic>=0.4.0",
+  "python-dotenv>=1.2.2",
+  "republic>=0.5.2",
   "smolagents[toolkit]>=1.24.0",
 ]
 
 [dependency-groups]
 dev = [
   "pytest>=9.0.2",
-  "ruff>=0.15.2",
-  "ty>=0.0.18",
+  "ruff>=0.15.4",
+  "ty>=0.0.19",
 ]
 
 [build-system]
