@@ -262,7 +262,7 @@ def main():
 
             print()
 
-        except (KeyboardInterrupt, EOFError):
+        except KeyboardInterrupt, EOFError:
             break
         except Exception as err:
             print(f"{RED}⏺ Error: {err}{RESET}")
