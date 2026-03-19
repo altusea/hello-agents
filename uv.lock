@@ -148,7 +148,7 @@ wheels = [
 
 [[package]]
 name = "any-llm-sdk"
-version = "1.11.0"
+version = "1.12.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -158,9 +158,9 @@ dependencies = [
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f3/18/161747c16bbe4b15122ac690e7941f3c58f24b3df382189fdbadf0624595/any_llm_sdk-1.11.0.tar.gz", hash = "sha256:cabda4135041127e728d6d6fe6a3c0d77f45c0dd50b38a8f0bc132a2ad948a6a", size = 148392, upload-time = "2026-03-12T13:18:29.74Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/21/d5/21ef27d031b72f0054ba0015a66cc1f10cda9410e4a3acb6e795d848ad0d/any_llm_sdk-1.12.1.tar.gz", hash = "sha256:76e043fcaa56fccfb375a908511869dc7dbf393dd97a82d06bb764d8201724e8", size = 152078, upload-time = "2026-03-18T13:13:01.735Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3c/d7/3d89d25e08e7bef70565b8af1872407a636308ba5fa203c667134157344b/any_llm_sdk-1.11.0-py3-none-any.whl", hash = "sha256:1329bfb7c5fea68918ff0a8f47ecde876bb2e2a8cf990500adb6ec119339010f", size = 206124, upload-time = "2026-03-12T13:18:28.116Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/cf/b8bf1ca1831c18438e117e29da85a58aee3a6a4cb0499e2bd0c0218fccd2/any_llm_sdk-1.12.1-py3-none-any.whl", hash = "sha256:2461eb53995b482499f70d020069e9e22ae5a97c1f7a105d74c33cb620621b09", size = 213698, upload-time = "2026-03-18T13:12:59.896Z" },
 ]
 
 [package.optional-dependencies]
@@ -857,17 +857,17 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.11.0" },
+    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.12.1" },
     { name = "google-search-results", specifier = ">=2.4.2" },
     { name = "langchain", specifier = ">=1.2.12" },
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-openai", specifier = ">=1.1.11" },
-    { name = "langgraph", specifier = ">=1.1.2" },
-    { name = "litellm", specifier = ">=1.82.1" },
+    { name = "langgraph", specifier = ">=1.1.3" },
+    { name = "litellm", specifier = ">=1.82.4" },
     { name = "nest-asyncio", specifier = ">=1.6.0" },
     { name = "pydantic", specifier = ">=2.12.5" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
-    { name = "republic", specifier = ">=0.5.4" },
+    { name = "republic", specifier = ">=0.5.6" },
     { name = "smolagents", extras = ["toolkit"], specifier = ">=1.24.0" },
 ]
 
@@ -1255,7 +1255,7 @@ wheels = [
 
 [[package]]
 name = "langgraph"
-version = "1.1.2"
+version = "1.1.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
@@ -1265,9 +1265,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "xxhash" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ca/a8/8494057db9149eb850258e5d4ae961a8dbda9a283e56e1b957393d9df0cd/langgraph-1.1.2.tar.gz", hash = "sha256:c4385ce349823a590891b3f6b1c46b54f51d0134164056866e95034985f047c9", size = 544288, upload-time = "2026-03-12T17:11:17.99Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d2/b2/e7db624e8b0ee063ecfbf7acc09467c0836a05914a78e819dfb3744a0fac/langgraph-1.1.3.tar.gz", hash = "sha256:ee496c297a9c93b38d8560be15cbb918110f49077d83abd14976cb13ac3b3370", size = 545120, upload-time = "2026-03-18T23:42:58.24Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/38/3117cd90325635893a76132cdae74f5b1f53c93c33b3dc6124521cec9825/langgraph-1.1.2-py3-none-any.whl", hash = "sha256:5fd43c839ec2b5af564e9ae2d2d4f22ce0a006a0b58e800cc4e8de4dd9cbb643", size = 167543, upload-time = "2026-03-12T17:11:16.965Z" },
+    { url = "https://files.pythonhosted.org/packages/fb/f7/221cc479e95e03e260496616e5ce6fb50c1ea01472e3a5bc481a9b8a2f83/langgraph-1.1.3-py3-none-any.whl", hash = "sha256:57cd6964ebab41cbd211f222293a2352404e55f8b2312cecde05e8753739b546", size = 168149, upload-time = "2026-03-18T23:42:56.967Z" },
 ]
 
 [[package]]
@@ -1330,7 +1330,7 @@ wheels = [
 
 [[package]]
 name = "litellm"
-version = "1.82.1"
+version = "1.82.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1346,9 +1346,9 @@ dependencies = [
     { name = "tiktoken" },
     { name = "tokenizers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/34/bd/6251e9a965ae2d7bc3342ae6c1a2d25dd265d354c502e63225451b135016/litellm-1.82.1.tar.gz", hash = "sha256:bc8427cdccc99e191e08e36fcd631c93b27328d1af789839eb3ac01a7d281890", size = 17197496, upload-time = "2026-03-10T09:10:04.438Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e6/79/b492be13542aebd62aafc0490e4d5d6e8e00ce54240bcabf5c3e46b1a49b/litellm-1.82.4.tar.gz", hash = "sha256:9c52b1c0762cb0593cdc97b26a8e05004e19b03f394ccd0f42fac82eff0d4980", size = 17378196, upload-time = "2026-03-18T01:18:05.378Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/57/77/0c6eca2cb049793ddf8ce9cdcd5123a35666c4962514788c4fc90edf1d3b/litellm-1.82.1-py3-none-any.whl", hash = "sha256:a9ec3fe42eccb1611883caaf8b1bf33c9f4e12163f94c7d1004095b14c379eb2", size = 15341896, upload-time = "2026-03-10T09:10:00.702Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/ad/7eaa1121c6b191f2f5f2e8c7379823ece6ec83741a4b3c81b82fe2832401/litellm-1.82.4-py3-none-any.whl", hash = "sha256:d37c34a847e7952a146ed0e2888a24d3edec7787955c6826337395e755ad5c4b", size = 15559801, upload-time = "2026-03-18T01:18:02.026Z" },
 ]
 
 [[package]]
@@ -2158,7 +2158,7 @@ wheels = [
 
 [[package]]
 name = "republic"
-version = "0.5.4"
+version = "0.5.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "any-llm-sdk" },
@@ -2166,9 +2166,9 @@ dependencies = [
     { name = "httpx" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/af/4c/f0d776d498f4ed6e92c2e26f6bd99e5b4395961cdbc567668e6cf67e96f5/republic-0.5.4.tar.gz", hash = "sha256:1a1870d75933d7c05d7abee09172c3b3c7473a5c65a52aaf25c161d034f440d9", size = 132388, upload-time = "2026-03-09T04:40:44.819Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/51/bf/af1bbec4eed4ce52283cc915f534ef0563925e25552f0a1b79fd93223745/republic-0.5.6.tar.gz", hash = "sha256:1ab2ef1346d1b8115cb8a05456a9ef458533b0da20334c214247d3ee34989b9b", size = 141206, upload-time = "2026-03-16T10:26:54.602Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e6/d1/e54222cb7916a6844df6edd5f054d143fb0c9cf2c0b0b4973d7f241c3ace/republic-0.5.4-py3-none-any.whl", hash = "sha256:04699f629dd023e411ffd0143c558f8ba695c8831c705eff647f81e8c5a8f38a", size = 57941, upload-time = "2026-03-09T04:40:47.08Z" },
+    { url = "https://files.pythonhosted.org/packages/9a/ec/ca9495c023c0a0b871daf41b4ad5661bbe58aa50550872301531adebf8df/republic-0.5.6-py3-none-any.whl", hash = "sha256:da075d28897fe1e26d358e5633fa3d4dde9207aa4c1523e3f71001d3fc610f83", size = 62264, upload-time = "2026-03-16T10:26:55.561Z" },
 ]
 
 [[package]]
