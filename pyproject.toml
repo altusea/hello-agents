@@ -1,19 +1,19 @@
 [project]
 name = "hello-agents"
-version = "2026.7.0"
+version = "2026.9.0"
 description = "Agent concepts playground"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-  "any-llm-sdk[all]>=1.19.0",
+  "any-llm-sdk[all]>=1.27.1",
   "google-search-results>=2.4.2",
-  "langchain>=1.3.11",
+  "langchain>=1.4.0",
   "langchain-community>=0.4.2",
-  "langchain-openai>=1.3.3",
+  "langchain-openai>=1.6.0",
   "langgraph>=1.2.7",
-  "litellm>=1.90.2",
+  "litellm>=1.100.0",
   "nest-asyncio>=1.6.0",
-  "pydantic>=2.13.4",
+  "pydantic>=2.13.5",
   "republic>=0.5.8",
   "smolagents[toolkit]>=1.26.0",
 ]
@@ -21,8 +21,8 @@ dependencies = [
 [dependency-groups]
 dev = [
   "pytest>=9.1.1",
-  "ruff>=0.15.20",
-  "ty>=0.0.56",
+  "ruff>=0.16.6",
+  "ty>=0.0.79",
 ]
 
 [build-system]
