@@ -9,9 +9,9 @@ dependencies = [
   "google-search-results>=2.4.2",
   "langchain>=1.4.0",
   "langchain-community>=0.4.2",
-  "langchain-openai>=1.6.0",
+  "langchain-openai>=1.6.2",
   "langgraph>=1.2.7",
-  "litellm>=1.100.0",
+  "litellm>=1.100.1",
   "nest-asyncio>=1.6.0",
   "pydantic>=2.13.5",
   "republic>=0.5.8",
@@ -22,7 +22,7 @@ dependencies = [
 dev = [
   "pytest>=9.1.1",
   "ruff>=0.16.6",
-  "ty>=0.0.79",
+  "ty>=0.0.80",
 ]
 
 [build-system]
