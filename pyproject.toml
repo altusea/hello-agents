@@ -5,13 +5,15 @@ description = "Agent concepts playground"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+  "aiohttp>=3.14.3",
   "any-llm-sdk[all]>=1.27.2",
+  "cryptography>=46.0.3",
   "google-search-results>=2.4.2",
   "langchain>=1.4.0",
   "langchain-community>=0.4.2",
   "langchain-openai>=1.6.2",
   "langgraph>=1.2.7",
-  "litellm>=1.100.1",
+  "litellm>=1.101.0",
   "nest-asyncio>=1.6.0",
   "pydantic>=2.13.5",
   "republic>=0.5.8",
