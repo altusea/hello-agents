@@ -132,7 +132,7 @@ wheels = [
 
 [[package]]
 name = "any-llm-sdk"
-version = "1.27.2"
+version = "1.28.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anthropic" },
@@ -143,9 +143,9 @@ dependencies = [
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/25/d0/6980a1e05f8ec897bed92942cd8e55e480db004fff9f569cc3c532fd7021/any_llm_sdk-1.27.2.tar.gz", hash = "sha256:4ab1998423825fa01a8ddd39c9816edbc5e78ebc2888a35ef703157e00beaf08", size = 212123, upload-time = "2026-09-10T09:51:48.039Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/92/0a/c4fbcc0cd516e28eccafba9cfe5d87b45f8849b54e7be0369c339a4a12a2/any_llm_sdk-1.28.0.tar.gz", hash = "sha256:cf9e27f18647ee92f54def3faed035547f6fb9acaa626794c66edcb48f5c118f", size = 228780, upload-time = "2026-09-18T10:09:26.117Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/64/2f/86bc38f41ed9f46a605f5f6a7d8111da5e6c9164e65f21d591b18e33e7c3/any_llm_sdk-1.27.2-py3-none-any.whl", hash = "sha256:aa1be32d5f0df80a57466cbc723b067d47b3be12bb3a11565be465d6136acada", size = 266888, upload-time = "2026-09-10T09:51:46.127Z" },
+    { url = "https://files.pythonhosted.org/packages/c7/3b/379d3885fc1be7a85061d9a049a6561f06f5b4ab0aa98cf93908aa33d025/any_llm_sdk-1.28.0-py3-none-any.whl", hash = "sha256:4fb5e2c82b9e51be6293a97cf6efd6f3fce79684b97537f4f7926d4c3aa5abde", size = 285107, upload-time = "2026-09-18T10:09:24.572Z" },
 ]
 
 [package.optional-dependencies]
@@ -874,7 +874,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.14.3" },
-    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.27.2" },
+    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.28.0" },
     { name = "cryptography", specifier = ">=50.0.1" },
     { name = "google-search-results", specifier = ">=2.4.2" },
     { name = "langchain", specifier = ">=1.4.0" },
@@ -1814,7 +1814,7 @@ wheels = [
 
 [[package]]
 name = "otari"
-version = "0.3.0"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -1822,9 +1822,9 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/24/57/a121d08fd41fde51948f7a8bc5176323a58988a394e0c28f5f16a550e7c6/otari-0.3.0.tar.gz", hash = "sha256:15b2408ade8cee9dfeb45adaf3396b3a3ba2a39d91f6645d53295447f96c817d", size = 259831, upload-time = "2026-08-14T08:27:57.671Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/79/4e/453a36fe9d147daecae2932e128a687e18153763a3caf385f5c9ba70049b/otari-0.4.0.tar.gz", hash = "sha256:42d8bdc3e666f3ddca928a6fdbfec1bd0b4977699d13f5d8dc518bfdeef60fae", size = 430152, upload-time = "2026-09-16T07:06:44.015Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/57/b5244e8b99d7f29cba2eac730e0ad60d38823132d83bf84da5faed15fed4/otari-0.3.0-py3-none-any.whl", hash = "sha256:9097c795b2b8007899750e34dcba106dbe713d20d4b8fc63d92a02df70145262", size = 669174, upload-time = "2026-08-14T08:27:56.064Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/91/165edde1b66d33c08539b582998a6cb40cee240556c0ddc12eaa52d62759/otari-0.4.0-py3-none-any.whl", hash = "sha256:3d7d2cc613d5c94a8e4b4c4fd44e0e62b2dc961f5e79fc436e74e885a44e4c08", size = 1128394, upload-time = "2026-09-16T07:06:42.035Z" },
 ]
 
 [[package]]
