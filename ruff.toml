@@ -4,6 +4,7 @@ include = [
   "pyproject.toml",
   "src/**/*.py",
   "bin/**/*.py",
+  "bub_examples/**/*.py",
   "datawhale/**/*.py",
   "examples/**/*.py",
   "patterns/**/*.py"
