@@ -322,7 +322,7 @@ wheels = [
 
 [[package]]
 name = "bub"
-version = "0.4.4"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -342,9 +342,9 @@ dependencies = [
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0e/3a/f70834fc91f17071c90cf3e295b34358cc823ba2098fea02389371662c4e/bub-0.4.4.tar.gz", hash = "sha256:2be8dda65b0f2a4aa9594b5e1112f203bfe8feaa485cf6067513b9b050f82f35", size = 174434, upload-time = "2026-09-14T13:11:54.192Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/57/f4/9c851926401a3c151fa78e2d7e829c32cba0ee4b1e5666497ed2e9a07ded/bub-0.5.0.tar.gz", hash = "sha256:48a8ceebee0695a9c6fc239046a6b1e4be88c99e9eeb1a88f63de3077bea4fe3", size = 228129, upload-time = "2026-09-30T11:28:52.753Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/80/4d/e8e000b3e8220eb465e68af65338f7bb706bb284a37ddba37f1d2ecff01a/bub-0.4.4-py3-none-any.whl", hash = "sha256:d0d3ad1187a2adaa3525a9484e0020af15f99a7b5f74e53514a866be56c55366", size = 144136, upload-time = "2026-09-14T13:11:52.814Z" },
+    { url = "https://files.pythonhosted.org/packages/27/c4/f0f6067368432ad83cb40a4411d87c00a2cc83e89c72f804249ce6f80b66/bub-0.5.0-py3-none-any.whl", hash = "sha256:0e4760f47d3da9ba44a3202122307958c9d8a861ff953af45e91cf8c0363324d", size = 175130, upload-time = "2026-09-30T11:28:51.51Z" },
 ]
 
 [[package]]
@@ -926,7 +926,7 @@ dev = [
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.14.3" },
     { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.30.0" },
-    { name = "bub", specifier = ">=0.4.4" },
+    { name = "bub", specifier = ">=0.5.0" },
     { name = "cryptography", specifier = ">=50.0.2" },
     { name = "google-search-results", specifier = ">=2.4.2" },
     { name = "langchain", specifier = ">=1.4.3" },
@@ -2469,15 +2469,15 @@ wheels = [
 
 [[package]]
 name = "rich"
-version = "14.2.0"
+version = "15.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py" },
     { name = "pygments" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fb/d2/8920e102050a0de7bfabeb4c4614a49248cf8d5d7a8d01885fbb24dc767a/rich-14.2.0.tar.gz", hash = "sha256:73ff50c7c0c1c77c8243079283f4edb376f0f6442433aecb8ce7e6d0b92d1fe4", size = 219990, upload-time = "2025-10-09T14:16:53.064Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c0/8f/0722ca900cc807c13a6a0c696dacf35430f72e0ec571c4275d2371fca3e9/rich-15.0.0.tar.gz", hash = "sha256:edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36", size = 230680, upload-time = "2026-04-12T08:24:00.75Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/25/7a/b0178788f8dc6cafce37a212c99565fa1fe7872c70c6c9c1e1a372d9d88f/rich-14.2.0-py3-none-any.whl", hash = "sha256:76bc51fe2e57d2b1be1f96c524b890b816e334ab4c1e45888799bfaab0021edd", size = 243393, upload-time = "2025-10-09T14:16:51.245Z" },
+    { url = "https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl", hash = "sha256:33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb", size = 310654, upload-time = "2026-04-12T08:24:02.83Z" },
 ]
 
 [[package]]
