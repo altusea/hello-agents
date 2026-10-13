@@ -16,7 +16,7 @@ dependencies = [
   "langgraph>=1.2.13",
   "litellm>=1.104.0",
   "nest-asyncio>=1.6.0",
-  "pydantic>=2.13.5",
+  "pydantic>=2.14.0",
   "republic>=0.5.8",
   "smolagents[toolkit]>=1.26.0",
 ]
