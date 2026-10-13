@@ -183,7 +183,7 @@ wheels = [
 
 [[package]]
 name = "any-llm-sdk"
-version = "1.30.0"
+version = "1.33.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anthropic" },
@@ -194,9 +194,9 @@ dependencies = [
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c3/2a/1b82ea0ec143d85557f662d648e443a50647e24a4864a4696059eacd3096/any_llm_sdk-1.30.0.tar.gz", hash = "sha256:d6c83eb2d4e3798efd3c97076f8a49d3397b4431b764c0ad6e80bb233fbc64d4", size = 243513, upload-time = "2026-10-01T02:26:58.42Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1c/da/6797a683237f511ae40bdfaa54fdb9944df4e691db6f3826b2d6dd43a220/any_llm_sdk-1.33.0.tar.gz", hash = "sha256:0010805821ddfb4e6f26b748830462708b67fa5b8503254e103506be272860e5", size = 253146, upload-time = "2026-10-09T18:39:05.492Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/00/94/18d6066bb6d51c5f3ed5502c37ee3775205b5712edf55f443b0ea17bdf27/any_llm_sdk-1.30.0-py3-none-any.whl", hash = "sha256:3941da3491a68378372e1aa5944b397e7ceae9b90bd30e9578b645e2869ab835", size = 302169, upload-time = "2026-10-01T02:26:56.628Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/15/f89e0f17babc68d8507c059c3cc0fe25901c802c318702a495ef3c4faf65/any_llm_sdk-1.33.0-py3-none-any.whl", hash = "sha256:e1bc5bda1e00549d584f7f0b796a3c5a56c33bc3409971e6899fb5cceed7ab5a", size = 312977, upload-time = "2026-10-09T18:39:03.805Z" },
 ]
 
 [package.optional-dependencies]
@@ -487,7 +487,7 @@ wheels = [
 
 [[package]]
 name = "cohere"
-version = "5.20.2"
+version = "7.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastavro" },
@@ -499,9 +499,9 @@ dependencies = [
     { name = "types-requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/dd/52/08564d1820970010d30421cd6e36f2e4ca552646504d3fe532eef282c88d/cohere-5.20.2.tar.gz", hash = "sha256:0aa9f3735626b70eedf15c231c61f3a58e7f8bbe5f0509fe7b2e6606c5d420f1", size = 180820, upload-time = "2026-01-23T13:42:51.308Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/69/49/631a5fac290b704ba0be751d0370f8fb931ad7cb2de3c2f8e4b6a4ffb141/cohere-7.2.0.tar.gz", hash = "sha256:eb74b46882dcff913f826945ae9630cee6b67237ca05d763005c4ad9c4ad5bba", size = 219040, upload-time = "2026-09-28T20:41:03.903Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e0/10/d76f045eefe42fb3f4e271d17ab41b5e73a3b6de69c98e15ab1cb0c8e6f6/cohere-5.20.2-py3-none-any.whl", hash = "sha256:26156d83bf3e3e4475e4caa1d8c4148475c5b0a253aee6066d83c643e9045be6", size = 318986, upload-time = "2026-01-23T13:42:50.151Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/a7/823e5bed159b0df507757743db3e0fb8de2deb39271b83bf6e97897e7536/cohere-7.2.0-py3-none-any.whl", hash = "sha256:d35cb91814d13eac6587e62bf78302b7683cdd036e7697a8e173ec76f2fb4e37", size = 370672, upload-time = "2026-09-28T20:41:02.334Z" },
 ]
 
 [[package]]
@@ -967,7 +967,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.14.4" },
-    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.30.0" },
+    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.33.0" },
     { name = "bub", specifier = ">=0.5.0" },
     { name = "cryptography", specifier = ">=50.0.2" },
     { name = "google-search-results", specifier = ">=2.4.2" },
