@@ -183,7 +183,7 @@ wheels = [
 
 [[package]]
 name = "any-llm-sdk"
-version = "1.37.0"
+version = "1.38.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anthropic" },
@@ -194,9 +194,9 @@ dependencies = [
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/aa/c3/754d9eeb1fcbf24d811912d17e6a77c942843ad57dd4f38ef9a32240ca8b/any_llm_sdk-1.37.0.tar.gz", hash = "sha256:43348783adab2a6050e5803d2f396937cf9928d76c182ce1604ee579e4ecf97f", size = 281585, upload-time = "2026-10-16T17:23:38.991Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c2/91/b6b3bd53f3e49f399b29623ffa1c0fc8a5f6e1dedd2a340223663525fcfc/any_llm_sdk-1.38.0.tar.gz", hash = "sha256:c490d404e4835147724daffe8b55b121dd9ff8a7495ae88a44b86815417d6de5", size = 298677, upload-time = "2026-10-19T11:49:09.394Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2b/45/b49aaacc60847c98ad3ea056472e0fe3a48617ddb86a5b1265369a7c3692/any_llm_sdk-1.37.0-py3-none-any.whl", hash = "sha256:7149338f63419a17234f59364aa42e1db5cd8321eb147c9e3da6dd9c05f1d38b", size = 345533, upload-time = "2026-10-16T17:23:37.572Z" },
+    { url = "https://files.pythonhosted.org/packages/73/0a/df3e0550ba598d120307f075bc0638c5f4801e56d3d349e86e808cb874c3/any_llm_sdk-1.38.0-py3-none-any.whl", hash = "sha256:252958b1716c0705d8bdaef464e58fc98d603e73266579678b97a3e644d6c0dc", size = 363858, upload-time = "2026-10-19T11:49:07.669Z" },
 ]
 
 [package.optional-dependencies]
@@ -968,7 +968,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.14.5" },
-    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.37.0" },
+    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.38.0" },
     { name = "bub", specifier = ">=0.5.1" },
     { name = "cryptography", specifier = ">=50.0.2" },
     { name = "google-search-results", specifier = ">=2.4.2" },
