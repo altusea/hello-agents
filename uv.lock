@@ -183,7 +183,7 @@ wheels = [
 
 [[package]]
 name = "any-llm-sdk"
-version = "1.39.0"
+version = "1.40.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anthropic" },
@@ -194,9 +194,9 @@ dependencies = [
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3f/68/7d18e955fa7807a1105c61662df43678a1b816f5dd4358b00d1ab1951c86/any_llm_sdk-1.39.0.tar.gz", hash = "sha256:584076c833059734f906852d636d67adc7204eed5fa6e594035a8cf77f8faa4a", size = 301900, upload-time = "2026-10-21T09:00:17.218Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/34/f3d6365c0fbe80479ed206df2ef827ad97b764e513dd887e2a3c31b905e1/any_llm_sdk-1.40.1.tar.gz", hash = "sha256:f9278c89f1f224fa80a5c031493a1c39ccc6a1fa4ed2698aed53363bdafcee5a", size = 304877, upload-time = "2026-10-23T09:55:07.48Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/f0/4ccc7a340f100ed2d2fe299ff173535227ae6ddd4715ff3056045395654d/any_llm_sdk-1.39.0-py3-none-any.whl", hash = "sha256:2e1926d9e196cb8c2cdcb679eebd550103fb75869f1bf9080afc3111e878a4eb", size = 367800, upload-time = "2026-10-21T09:00:15.297Z" },
+    { url = "https://files.pythonhosted.org/packages/c6/21/77590446853ac67afcde5282f46b901b6edfaa5c2177c460a579c4d11799/any_llm_sdk-1.40.1-py3-none-any.whl", hash = "sha256:fc64bcbe37f348aec5752dbf7597d0b3ba4bffb359ee0ab7823b27d3e2f9eecb", size = 370790, upload-time = "2026-10-23T09:55:05.886Z" },
 ]
 
 [package.optional-dependencies]
@@ -989,14 +989,14 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.14.5" },
-    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.39.0" },
+    { name = "any-llm-sdk", extras = ["all"], specifier = ">=1.40.1" },
     { name = "bub", specifier = ">=0.5.1" },
     { name = "cryptography", specifier = ">=50.0.2" },
     { name = "google-search-results", specifier = ">=2.4.2" },
     { name = "langchain", specifier = ">=1.4.7" },
     { name = "langchain-community", specifier = ">=0.4.2" },
     { name = "langchain-openai", specifier = ">=1.7.2" },
-    { name = "langgraph", specifier = ">=1.2.16" },
+    { name = "langgraph", specifier = ">=1.2.17" },
     { name = "litellm", specifier = ">=1.106.2" },
     { name = "nest-asyncio", specifier = ">=1.6.0" },
     { name = "pydantic", specifier = ">=2.14.1" },
@@ -1477,7 +1477,7 @@ wheels = [
 
 [[package]]
 name = "langgraph"
-version = "1.2.16"
+version = "1.2.17"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
@@ -1487,9 +1487,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "xxhash" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/db/65/69de99a24546c1e3b75a67905dbcc17ed6cd0ed81694d4cc021ed688a60d/langgraph-1.2.16.tar.gz", hash = "sha256:e4dd63480bfd3ee14a6ab80ecf1311698780519693d8e3b67a28f3486e69e1f7", size = 772613, upload-time = "2026-10-16T22:11:14.147Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/75/39/38b60bfc6fd064bc172693e19b3a6dccdaf9141bc9b984a9f83cdb06d014/langgraph-1.2.17.tar.gz", hash = "sha256:311516e313abd5424596d6c5250507c89be2e1973cbe813061696728803b0e10", size = 774002, upload-time = "2026-10-24T01:07:50.567Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ad/eb/ceb9bed99f6549e9ec51c497b749062d19e0a1c68fea0ad801d55c4a9691/langgraph-1.2.16-py3-none-any.whl", hash = "sha256:aeceb1bc49488409f12b02f1e51881099391d9e85bcfd78e1dbead71831c41b5", size = 260357, upload-time = "2026-10-16T22:11:12.638Z" },
+    { url = "https://files.pythonhosted.org/packages/00/d9/2e5b99319e2e8d39bc44d84836497c2e8f616554bb47843c8c819c8fed28/langgraph-1.2.17-py3-none-any.whl", hash = "sha256:e022a9fea64631fed946557a23f3fa5ac2ff38c72dcb999f426fc77d55ccde60", size = 260489, upload-time = "2026-10-24T01:07:49.155Z" },
 ]
 
 [[package]]
