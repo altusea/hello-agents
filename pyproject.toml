@@ -17,7 +17,7 @@ dependencies = [
   "litellm>=1.106.6",
   "nest-asyncio>=1.6.0",
   "pydantic>=2.14.2",
-  "republic>=0.6.0",
+  "republic>=0.6.1",
   "smolagents[toolkit]>=1.26.0",
 ]
 
