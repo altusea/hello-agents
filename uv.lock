@@ -953,7 +953,7 @@ requires-dist = [
     { name = "google-search-results", specifier = ">=2.4.2" },
     { name = "litellm", specifier = ">=1.110.0.dev2" },
     { name = "nest-asyncio", specifier = ">=1.6.0" },
-    { name = "republic", specifier = ">=0.6.1" },
+    { name = "republic", specifier = ">=0.6.2" },
     { name = "smolagents", extras = ["toolkit"], specifier = ">=1.26.0" },
 ]
 
@@ -2108,7 +2108,7 @@ wheels = [
 
 [[package]]
 name = "republic"
-version = "0.6.1"
+version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "authlib" },
@@ -2116,9 +2116,9 @@ dependencies = [
     { name = "httpx2" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2d/65/b35422b3f61ec8800390531d17da20873eb6bbe7bca26c9cbbc0cf6a60bd/republic-0.6.1.tar.gz", hash = "sha256:52a956e92438bbcb1e9ef42558402e080262305c769069402bd3dadc7a61b1c0", size = 250439, upload-time = "2026-10-31T01:32:50.634Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/c3/06d5e3854f11335588464800e7923353666919c6b76ed80667d3afc6906b/republic-0.6.2.tar.gz", hash = "sha256:238e80cd5423e3f9699cfb5d43a6821ee047339a909aa54f48c2a965c44e91d8", size = 261537, upload-time = "2026-11-12T02:30:38.212Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a1/9a/7ed84e84ba241dbf82d891d47f4bc949447048298bb24df98ea03e3a82eb/republic-0.6.1-py3-none-any.whl", hash = "sha256:45baf88a1b1429d2f3c047ead2b9d57789a90f09edebf9b1e5b0061ca622fabc", size = 82400, upload-time = "2026-10-31T01:32:49.341Z" },
+    { url = "https://files.pythonhosted.org/packages/30/4b/65af3571da7de5fce8d38a64413cfcb96e956a5b7eb9c32f7263fe254a64/republic-0.6.2-py3-none-any.whl", hash = "sha256:f4a3767b0ce15a7c72b7029556c52d2a0a45b854ffdaf4341548404f5d35fcd1", size = 84017, upload-time = "2026-11-12T02:30:36.714Z" },
 ]
 
 [[package]]
