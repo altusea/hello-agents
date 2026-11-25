@@ -12,7 +12,7 @@ dependencies = [
   "google-search-results>=2.4.2",
   "litellm>=1.112.0.dev1",
   "nest-asyncio>=1.6.0",
-  "republic>=0.6.2",
+  "republic>=0.6.3",
   "smolagents[toolkit]>=1.26.0",
 ]
 
